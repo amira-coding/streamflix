@@ -99,7 +99,7 @@ nav ul li a:hover::after{
 }
 
 .menu-icon{
-  /* display: none; */
+  display: none;
   /* padding-right: 50px; */
   cursor: pointer;
   color: #f0e5e5;
@@ -1113,21 +1113,31 @@ nav ul li a:hover::after{
   }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
 
-}
+} */
 
 /* Base styles for nav */
 .main-nav {
   list-style: none;
   gap: 1rem;
   padding: 1rem;
+  display: none;
+  background-color: #ee1414b9;
+  width: 200px;
+  z-index: 1000;
+  height: 50vh;
+  border-radius: 10px;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  flex-direction: column;
 }
 
 /* Large screens: show nav */
 @media (min-width: 769px) {
   .main-nav {
-    display: flex;
+    display: none;
   }
 }
 
@@ -1143,7 +1153,7 @@ nav ul li a:hover::after{
     width: 200px;
     padding: 1rem;
     z-index: 1000;
-    height: 50vh;
+    height: 40vh;
     border-radius: 10px;
   }
 
@@ -1168,5 +1178,13 @@ nav ul li a:hover::after{
   
 
 }
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    color: #fff;
+  }
+  .menu-icon i {
+    font-size: 24px;
+  }
 }
 
