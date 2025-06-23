@@ -1186,5 +1186,8 @@ nav ul li a:hover::after{
   .menu-icon i {
     font-size: 24px;
   }
+  .tvshow-card, .content-card{
+    width: 100%;
+  }
 }
 
